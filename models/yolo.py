@@ -274,7 +274,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
         if m in [Conv, GhostConv, Bottleneck, GhostBottleneck, SPP, SPPF, DWConv, MixConv2d, Focus, CrossConv,
                  BottleneckCSP, C3, C3TR, C3SPP, C3Ghost, CSPMLP, MCSPMLP, MA2, MCSPMLP2, CSPMLP2, ACSP, CSPConv,
                  RepConv, RepBottleneck, MA3, CBAM, CA, GAMAttention, DCNV3_YoLo, C3_DCNV3, MDAM_CAM, MDAM_SAM,
-                 MDAM_RFBM, MS, MS2, MS_2, MSBlock, ELANBlock, ASPP, MFA, DySnakeConv, C3_DySnake, nn.ConvTranspose2d,
+                 MDAM_RFBM, MSBlock, ELANBlock, ASPP, DySnakeConv, C3_DySnake, nn.ConvTranspose2d,
                  MDAM_1, MDAM_3, SE, ECA, C3STR, BoT3, MA2_CAM_SAM, MA2_135, MDAM_7, MA2_ReLU, MA2_softmax]:
             c1, c2 = ch[f], args[0]
             if c2 != no:  # if not output
